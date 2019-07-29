@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8A463E8422E16DFD0000E176 /* UIColor+IRHex.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A463E8222E16DFD0000E176 /* UIColor+IRHex.h */; };
 		8A463E8522E16DFD0000E176 /* UIColor+IRHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A463E8322E16DFD0000E176 /* UIColor+IRHex.m */; };
-		8A463E8922E174FD0000E176 /* IRPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A463E8722E174FD0000E176 /* IRPickerView.h */; };
+		8A463E8922E174FD0000E176 /* IRPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A463E8722E174FD0000E176 /* IRPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A463E8A22E174FD0000E176 /* IRPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A463E8822E174FD0000E176 /* IRPickerView.m */; };
 		8A463E8D22E1751B0000E176 /* IRPickerTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A463E8B22E1751B0000E176 /* IRPickerTableView.h */; };
 		8A463E8E22E1751B0000E176 /* IRPickerTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A463E8C22E1751B0000E176 /* IRPickerTableView.m */; };
@@ -246,11 +246,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A463E8922E174FD0000E176 /* IRPickerView.h in Headers */,
 				8A710B9122D73F47007B61E9 /* IRDataPickerManager.h in Headers */,
 				8A710BA922D740A1007B61E9 /* NSDate+IRCategory.h in Headers */,
 				8A710BA522D74070007B61E9 /* NSCalendar+IRCurrent.h in Headers */,
 				8A710B4922D73CCA007B61E9 /* IRDataPicker.h in Headers */,
+				8A463E8922E174FD0000E176 /* IRPickerView.h in Headers */,
 				8A710B9D22D73F9C007B61E9 /* IREnumeration.h in Headers */,
 				8A710B5D22D73D5E007B61E9 /* IRDataPicker+DateHourMinute.h in Headers */,
 				8A710B7122D73E15007B61E9 /* IRDataPicker+MonthDayHour.h in Headers */,
