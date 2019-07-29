@@ -9,5 +9,5 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "8.0"
   spec.source       = { :git => "https://github.com/irons163/IRDataPicker.git", :tag => spec.version.to_s }
 # spec.source       = { :path => '.' }
-  spec.source_files  = "IRDataPicker/Class"
+  spec.source_files  = "Class/**/*.{h,m}", "IRDataPicker/Class/**/*.{h,m}"
 end
