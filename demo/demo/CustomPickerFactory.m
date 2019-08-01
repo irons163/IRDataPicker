@@ -8,14 +8,12 @@
 
 #import "CustomPickerFactory.h"
 #import <IRDataPicker/IRDataPicker.h>
-//#import <IRDataPicker/IRDataPickerManager.h>
 
 @implementation CustomPickerFactory
 
 + (IRDataPickerManager *)createIRDataPickManager {
-    IRDataPicker *a;
     IRDataPickerManager *datePickManager = [[IRDataPickerManager alloc]init];
-    IRDataPicker *datePicker = datePickManager.datePicker;
+    IRDataPicker *datePicker = datePickManager.dataPicker;
     datePicker.showUnit = IRShowUnitTypeNone;
     datePicker.isHiddenMiddleText = NO;
 

@@ -35,7 +35,7 @@
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     
-    self.headerView.language = self.datePicker.language;
+    self.headerView.language = self.dataPicker.language;
 }
 
 - (void)viewWillLayoutSubviews {
@@ -43,7 +43,7 @@
     
     self.headerView.style = self.style;
     self.dismissView.frame = self.view.bounds;
-    self.contentView.backgroundColor = self.datePicker.backgroundColor;
+    self.contentView.backgroundColor = self.dataPicker.backgroundColor;
     if (self.style == IRDataPickerManagerStyleSheet) {
         [self setupStyleSheet];
     }else if (self.style == IRDataPickerManagerStyleAlert) {
@@ -70,7 +70,7 @@
     };
     self.headerView.confirmButtonHandlerBlock =^{
         __strong IRDataPickerManager *strong_self = weak_self;
-        [strong_self.datePicker tapSelectedHandler];
+        [strong_self.dataPicker tapSelectedHandler];
         [strong_self cancelButtonHandler];
     };
 }
@@ -102,7 +102,7 @@
     if (@available(iOS 11.0, *)) {
         bottom = self.view.safeAreaInsets.bottom;
     }
-    CGFloat rowHeight = self.datePicker.rowHeight;
+    CGFloat rowHeight = self.dataPicker.rowHeight;
     CGFloat headerViewHeight = self.headerHeight;
     CGFloat contentViewHeight = rowHeight * 5 + headerViewHeight;
     CGFloat datePickerHeight = contentViewHeight - headerViewHeight - bottom;
@@ -121,7 +121,7 @@
                                         self.view.bounds.size.width,
                                         contentViewHeight);
     self.headerView.frame = headerViewFrame;
-    self.datePicker.frame = datePickerFrame;
+    self.dataPicker.frame = datePickerFrame;
     self.headerView.backgroundColor = self.headerViewBackgroundColor;
     [UIView animateWithDuration:0.2 animations:^{
         if (self.isShadeBackgroud) {
@@ -129,12 +129,12 @@
         }
         self.contentView.frame = contentViewFrame;
         self.headerView.frame = headerViewFrame;
-        self.datePicker.frame = datePickerFrame;
+        self.dataPicker.frame = datePickerFrame;
     }];
 }
 
 - (void)setupStyleAlert {
-    CGFloat rowHeight = self.datePicker.rowHeight;
+    CGFloat rowHeight = self.dataPicker.rowHeight;
     CGFloat datePickerHeight = rowHeight * 5;
     CGFloat headerViewHeight = self.headerHeight;
     CGFloat contentViewMarginLeft = 30;
@@ -150,8 +150,8 @@
     datePickerFrame.origin.y = CGRectGetMaxY(self.headerView.frame);
     datePickerFrame.size.height = datePickerHeight;
     self.contentView.layer.cornerRadius = 10;
-    self.datePicker.layer.cornerRadius = 10;
-    self.datePicker.frame = datePickerFrame;
+    self.dataPicker.layer.cornerRadius = 10;
+    self.dataPicker.frame = datePickerFrame;
     self.contentView.transform = CGAffineTransformMakeScale(0.5, 0.5);
     [UIView animateWithDuration:0.05
                      animations:^{
@@ -163,7 +163,7 @@
 }
 
 - (void)setupStyle3 {
-    CGFloat rowHeight = self.datePicker.rowHeight;
+    CGFloat rowHeight = self.dataPicker.rowHeight;
     CGFloat datePickerHeight = rowHeight * 5;
     CGFloat headerViewHeight = self.headerHeight;
     CGFloat contentViewMarginLeft = 30;
@@ -179,9 +179,9 @@
                                        headerViewHeight);
     CGRect datePickerFrame = self.contentView.bounds;
     datePickerFrame.size.height = datePickerHeight;
-    self.datePicker.frame = datePickerFrame;
+    self.dataPicker.frame = datePickerFrame;
     self.contentView.layer.cornerRadius = 10;
-    self.datePicker.layer.cornerRadius = 10;
+    self.dataPicker.layer.cornerRadius = 10;
     self.contentView.transform = CGAffineTransformMakeScale(0.5, 0.5);
     [UIView animateWithDuration:0.05
                      animations:^{
@@ -244,14 +244,14 @@
     return _contentView;
 }
 
-- (IRDataPicker *)datePicker {
-    if (!_datePicker) {
+- (IRDataPicker *)dataPicker {
+    if (!_dataPicker) {
         IRDataPicker *datePicker = [[IRDataPicker alloc]init];
         datePicker.backgroundColor = [UIColor whiteColor];
         [self.contentView addSubview:datePicker];
-        _datePicker = datePicker;
+        _dataPicker = datePicker;
     }
-    return _datePicker;
+    return _dataPicker;
 }
 
 - (IRDataPickerManagerHeaderView *)headerView {

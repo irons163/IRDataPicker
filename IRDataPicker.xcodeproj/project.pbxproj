@@ -17,6 +17,8 @@
 		8A463E9222E1754C0000E176 /* IRPickerColumnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A463E9022E1754C0000E176 /* IRPickerColumnView.m */; };
 		8A463E9522E1756A0000E176 /* IRPickerColumnCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A463E9322E1756A0000E176 /* IRPickerColumnCell.h */; };
 		8A463E9622E1756A0000E176 /* IRPickerColumnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A463E9422E1756A0000E176 /* IRPickerColumnCell.m */; };
+		8A61739022F2DCDB00BE5D4A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A61739222F2DCDB00BE5D4A /* Localizable.strings */; };
+		8A61739322F2DD7900BE5D4A /* IRDataPickerBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8A61737D22F2CEB100BE5D4A /* IRDataPickerBundle.bundle */; };
 		8A710B4922D73CCA007B61E9 /* IRDataPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A710B4722D73CCA007B61E9 /* IRDataPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A710B4A22D73CCA007B61E9 /* IRDataPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A710B4822D73CCA007B61E9 /* IRDataPicker.m */; };
 		8A710B4D22D73D05007B61E9 /* IRDataPicker+Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A710B4B22D73D05007B61E9 /* IRDataPicker+Common.h */; };
@@ -78,6 +80,9 @@
 		8A463E9022E1754C0000E176 /* IRPickerColumnView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRPickerColumnView.m; sourceTree = "<group>"; };
 		8A463E9322E1756A0000E176 /* IRPickerColumnCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRPickerColumnCell.h; sourceTree = "<group>"; };
 		8A463E9422E1756A0000E176 /* IRPickerColumnCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRPickerColumnCell.m; sourceTree = "<group>"; };
+		8A61737D22F2CEB100BE5D4A /* IRDataPickerBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IRDataPickerBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A61737F22F2CEB100BE5D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A61739122F2DCDB00BE5D4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8A710B3B22D73C84007B61E9 /* IRDataPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IRDataPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A710B3F22D73C84007B61E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A710B4722D73CCA007B61E9 /* IRDataPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRDataPicker.h; sourceTree = "<group>"; };
@@ -131,6 +136,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8A61737A22F2CEB100BE5D4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A710B3822D73C84007B61E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -156,10 +168,20 @@
 			path = PickerView;
 			sourceTree = "<group>";
 		};
+		8A61737E22F2CEB100BE5D4A /* IRDataPickerBundle */ = {
+			isa = PBXGroup;
+			children = (
+				8A61737F22F2CEB100BE5D4A /* Info.plist */,
+				8A61739222F2DCDB00BE5D4A /* Localizable.strings */,
+			);
+			path = IRDataPickerBundle;
+			sourceTree = "<group>";
+		};
 		8A710B3122D73C84007B61E9 = {
 			isa = PBXGroup;
 			children = (
 				8A710B3D22D73C84007B61E9 /* IRDataPicker */,
+				8A61737E22F2CEB100BE5D4A /* IRDataPickerBundle */,
 				8A710B3C22D73C84007B61E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -168,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				8A710B3B22D73C84007B61E9 /* IRDataPicker.framework */,
+				8A61737D22F2CEB100BE5D4A /* IRDataPickerBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -282,6 +305,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		8A61737C22F2CEB100BE5D4A /* IRDataPickerBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A61738222F2CEB100BE5D4A /* Build configuration list for PBXNativeTarget "IRDataPickerBundle" */;
+			buildPhases = (
+				8A61737922F2CEB100BE5D4A /* Sources */,
+				8A61737A22F2CEB100BE5D4A /* Frameworks */,
+				8A61737B22F2CEB100BE5D4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IRDataPickerBundle;
+			productName = IRDataPickerBundle;
+			productReference = 8A61737D22F2CEB100BE5D4A /* IRDataPickerBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		8A710B3A22D73C84007B61E9 /* IRDataPicker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A710B4322D73C84007B61E9 /* Build configuration list for PBXNativeTarget "IRDataPicker" */;
@@ -309,6 +349,9 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Phil;
 				TargetAttributes = {
+					8A61737C22F2CEB100BE5D4A = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 					8A710B3A22D73C84007B61E9 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
@@ -327,21 +370,38 @@
 			projectRoot = "";
 			targets = (
 				8A710B3A22D73C84007B61E9 /* IRDataPicker */,
+				8A61737C22F2CEB100BE5D4A /* IRDataPickerBundle */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8A61737B22F2CEB100BE5D4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A61739022F2DCDB00BE5D4A /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A710B3922D73C84007B61E9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A61739322F2DD7900BE5D4A /* IRDataPickerBundle.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8A61737922F2CEB100BE5D4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A710B3722D73C84007B61E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,7 +439,54 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		8A61739222F2DCDB00BE5D4A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A61739122F2DCDB00BE5D4A /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		8A61738022F2CEB100BE5D4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T6VV6T753H;
+				INFOPLIST_FILE = IRDataPickerBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = irons163.IRDataPickerBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		8A61738122F2CEB100BE5D4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T6VV6T753H;
+				INFOPLIST_FILE = IRDataPickerBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = irons163.IRDataPickerBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		8A710B4122D73C84007B61E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -549,6 +656,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8A61738222F2CEB100BE5D4A /* Build configuration list for PBXNativeTarget "IRDataPickerBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A61738022F2CEB100BE5D4A /* Debug */,
+				8A61738122F2CEB100BE5D4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8A710B3522D73C84007B61E9 /* Build configuration list for PBXProject "IRDataPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface IRDataPickerManager : UIViewController
 
-@property (nonatomic, weak) IRDataPicker *datePicker;
+@property (nonatomic, weak) IRDataPicker *dataPicker;
 @property (nonatomic, assign) IRDataPickerManagerStyle style;
 @property (nonatomic, assign) BOOL isShadeBackgroud;
 

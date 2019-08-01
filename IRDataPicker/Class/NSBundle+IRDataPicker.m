@@ -13,7 +13,7 @@
 + (instancetype)safeBundle {
     static NSBundle *bundle = nil;
     if (bundle == nil) {
-        bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[IRDataPicker class]] pathForResource:@"IRDataPicker" ofType:@"bundle"]];
+        bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[IRDataPicker class]] pathForResource:@"IRDataPickerBundle" ofType:@"bundle"]];
     }
     return bundle;
 }

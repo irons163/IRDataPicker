@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  IRDataPicker
+
+  Created by Phil on 2019/8/1.
+  Copyright © 2019 Phil. All rights reserved.
+*/
+
+"yearString" = " Y";
+"monthString" = " M";
+"dayString" = " D";
+"hourString" = " H";
+"minuteString" = " M";
+"secondString" = " S";
+"mondayString" = " Mon";
+"tuesdayString" = " Tue";
+"wednesdayString" = " Wed";
+"thursdayString" = " Thur";
+"fridayString" = " Fri";
+"saturdayString" = " Sat";
+"sundayString" = " Sun";
+"cancelButtonText" = "Cancel";
+"confirmButtonText" = "Sure";
