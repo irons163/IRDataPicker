@@ -3,8 +3,7 @@
 
 # IRDataPicker 
 
-##### This project is copy and change from YBPopupMenu. Implemet custom arrow icon.
-* Custom popupMenu 
+##### This project is copy and change from PGDatePicker. Implemet custom data picker.
 
 - IRDataPicker is a powerful data picker framework for iOS.
 
@@ -74,3 +73,4 @@ datePickManager.confirmButtonFont = [UIFont boldSystemFontOfSize:17];
 
 ## Screenshots
 ![Demo](./demo/ScreenShots/demo1.png)
+![Demo](./demo/ScreenShots/demo2.png)
