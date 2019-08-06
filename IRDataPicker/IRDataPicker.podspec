@@ -13,5 +13,5 @@ Pod::Spec.new do |spec|
 #  spec.resource_bundles = {
 #    'IRDataPickerBundle' => ["../IRDataPickerBundle/**/*", "IRDataPickerBundle/**/*"]
 #  }
-#  spec.exclude_files = [ "../IRDataPickerBundle/**/*.plist", "IRDataPickerBundle/**/#*.plist" ]
+  spec.exclude_files = [ "../IRDataPickerBundle/**/*.plist", "IRDataPickerBundle/**/*.plist" ]
 end
