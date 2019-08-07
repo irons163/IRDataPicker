@@ -13,7 +13,20 @@
 + (instancetype)safeBundle {
     static NSBundle *bundle = nil;
     if (bundle == nil) {
-        bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[IRDataPicker class]] pathForResource:@"IRDataPickerBundle" ofType:@"bundle"]];
+        NSString *bundleName = @"IRDataPickerBundle";
+        
+        //没使用framwork的情况下
+        NSURL *bundleURL = [[NSBundle bundleForClass:[IRDataPicker class]] URLForResource:bundleName withExtension:@"bundle"];
+        //使用framework形式
+        if (!bundleURL) {
+            bundleURL = [[NSBundle mainBundle] URLForResource:@"Frameworks" withExtension:nil];
+            bundleURL = [bundleURL URLByAppendingPathComponent:bundleName];
+            bundleURL = [bundleURL URLByAppendingPathExtension:@"framework"];
+            NSBundle *associateBunle = [NSBundle bundleWithURL:bundleURL];
+            bundleURL = [associateBunle URLForResource:bundleName withExtension:@"bundle"];
+        }
+        
+        bundle = [NSBundle bundleWithURL:bundleURL];
     }
     return bundle;
 }
