@@ -20,7 +20,7 @@
         //使用framework形式
         if (!bundleURL) {
             bundleURL = [[NSBundle mainBundle] URLForResource:@"Frameworks" withExtension:nil];
-            bundleURL = [bundleURL URLByAppendingPathComponent:bundleName];
+            bundleURL = [bundleURL URLByAppendingPathComponent:@"IRDataPicker"];
             bundleURL = [bundleURL URLByAppendingPathExtension:@"framework"];
             NSBundle *associateBunle = [NSBundle bundleWithURL:bundleURL];
             bundleURL = [associateBunle URLForResource:bundleName withExtension:@"bundle"];
