@@ -28,7 +28,7 @@
 ```
 
 ```obj-c
-PGDatePicker *datePicker = [[PGDatePicker alloc]init];
+IRDataPicker *datePicker = [[IRDataPicker alloc]init];
 [self.view addSubview:datePicker];
 
 datePicker.selectedDate = ^(NSDateComponents *dateComponents) {
